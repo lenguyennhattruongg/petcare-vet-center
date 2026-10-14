@@ -1,0 +1,167 @@
+/* ===================================================================
+   PETCARE CLINIC & HOSPITAL - DESIGN SYSTEM (CSS VARIABLES)
+   Màu chủ đạo: #1F7A63 (Xanh ngọc y tế), Nhấn: #F29F3D (Cam ấm áp)
+   =================================================================== */
+:root {
+  --primary-color: #1F7A63;
+  --primary-hover: #165b4a;
+  --primary-light: #e8f4f1;
+  --secondary-color: #F29F3D;
+  --secondary-hover: #d8892b;
+  --secondary-light: #fef5ea;
+  --bg-color: #F7FAF9;
+  --surface-color: #FFFFFF;
+  --text-main: #1F2933;
+  --text-muted: #616E7C;
+  --border-color: #E4E7EB;
+  --danger-color: #E12D39;
+  --success-color: #27AB83;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --shadow-sm: 0 2px 8px rgba(31, 122, 99, 0.08);
+  --shadow-md: 0 8px 24px rgba(31, 122, 99, 0.12);
+  --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body {
+  font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Navbar */
+.navbar-petcare {
+  background: var(--surface-color);
+  box-shadow: var(--shadow-sm);
+  padding: 14px 0;
+  transition: var(--transition);
+}
+
+.navbar-brand-logo {
+  font-weight: 800;
+  font-size: 1.45rem;
+  color: var(--primary-color) !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-brand-logo i {
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: var(--text-main);
+  padding: 8px 16px !important;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--primary-color) !important;
+  background-color: var(--primary-light);
+}
+
+/* Nút bấm chuẩn UI */
+.btn-primary-petcare {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: var(--radius-sm);
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition);
+}
+
+.btn-primary-petcare:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-secondary-petcare {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: #1F2933;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: var(--radius-sm);
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition);
+}
+
+.btn-secondary-petcare:hover {
+  background-color: var(--secondary-hover);
+  border-color: var(--secondary-hover);
+  color: #1F2933;
+  transform: translateY(-2px);
+}
+
+/* Card Dịch vụ */
+.card-service {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  transition: var(--transition);
+  height: 100%;
+}
+
+.card-service:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+.service-icon-wrapper {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-sm);
+  background: var(--primary-light);
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin-bottom: 18px;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 70px 0 60px;
+  background: linear-gradient(135deg, #eaf5f2 0%, #f7faf9 100%);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Footer */
+.footer-petcare {
+  background: #152220;
+  color: #c4d1ce;
+  padding: 60px 0 24px;
+  margin-top: 80px;
+}
+
+.footer-petcare a {
+  color: #9cb3ad;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.footer-petcare a:hover {
+  color: #fff;
+  padding-left: 4px;
+}
